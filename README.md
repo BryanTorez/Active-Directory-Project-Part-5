@@ -596,27 +596,21 @@ We have that one all the way up until seven. So I think that's all of the sub te
 <img src="https://snipboard.io/8jDE3s.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-<br />
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-<br />
 <br />
 <br />
 We'll execute that technique. So I'll clear out the screen. I'll type 'T1059.00' and hit "Enter". So Defender is catching some threats. We see a Powershell command here, "-exec bypass -noprofile". Perhaps that is something we can search for in Splunk. So let's go ahead and open up Splunk and take a look.
 <br />
 <br />
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://snipboard.io/5ulgrv.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://snipboard.io/yGBA8a.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://snipboard.io/BFh9kX.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://snipboard.io/ywDGqd.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
 <br />
@@ -624,16 +618,10 @@ We'll execute that technique. So I'll clear out the screen. I'll type 'T1059.00'
 I'll change the time to "Last 15 minutes". Look at that, we do see a "NewLocalUser". So it just took some time, but the concept still applies. So we can detect that activity, however if you happen to see no events, even after waiting for a bit, then that means you have a gap in visibility.
 <br />
 <br />
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://snipboard.io/hJ0YZV.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-<br />
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-<br />
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://snipboard.io/A7Dy0B.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
 <br />
@@ -641,16 +629,16 @@ I'll change the time to "Last 15 minutes". Look at that, we do see a "NewLocalUs
 Now, if we were to look at Powershell. Scrolling down we do see an event. It is quite hard to see, but I'll zoom in. We see "-exec bypass -noprofile $XmL" and if you recall in our Powershell window, that is this command right here. So this means that we can build alerts to detect on this activity in the future if we wanted to, along with creating a new local user account. Now, that we know that the event actually generates, it just takes a little time. 
 <br />
 <br />
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://snipboard.io/TJiuRf.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://snipboard.io/wbHrkc.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://snipboard.io/rbkBK7.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://snipboard.io/GZEwTY.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
 <br />
@@ -658,16 +646,10 @@ Now, if we were to look at Powershell. Scrolling down we do see an event. It is 
 Before we end, there is one last thing I wanted to talk about. That is with Kali Linux. In my example, I used "tsmith" with the password of this password. If you created a different account with a different password and you want to follow along, you need to make sure that your password is listed in the "passwords.txt" file.
 <br />
 <br />
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://snipboard.io/jMipeE.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-<br />
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-<br />
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://snipboard.io/HnNGs1.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
 <br />
@@ -675,33 +657,12 @@ Before we end, there is one last thing I wanted to talk about. That is with Kali
 Since as you can see at the bottom, my password is right there. So if your password to "tsmith" or to another user account was let's just say "summer2024!". Then, you need to make sure you put that into your "passwords.txt" file, otherwise this tool wouldn't be able to brute force successfully. So that's just one quick note.
 <br />
 <br />
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-<br />
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-<br />
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-<br />
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://snipboard.io/Lu5VGh.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
 <br />
 <br />
-If you're new to Virtual box and you don't know what a snapshot is, it's essentially a backup. So if I did happen to break something and my Kali Linux no longer works. For example, I can revert it back to a snapshot to a known good state. 
-<br />
-<br />
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-<br />
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-<br />
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-<br />
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+If you're new to Virtual box and you don't know what a snapshot is, it's essentially a backup. So if I did happen to break something and my Kali Linux no longer works. For example, I can revert it back to a snapshot to a known good state.
 <br />
 <br />
 <br />
@@ -709,18 +670,18 @@ If you're new to Virtual box and you don't know what a snapshot is, it's essenti
 To take a snapshot, you simply click on "Machine" at the top and select "Take Snapshot". Then, you can create a name and a description and hit "OK". Now, to revert to a snapshot, there are a lot of different options. You can simply click on "close" and then just check "Restore Current snapshot". Then, that's it.
 <br />
 <br />
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://snipboard.io/iImR04.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://snipboard.io/98BmvH.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://snipboard.io/2v8Ojm.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://snipboard.io/L5Oe8w.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
 <br />
 <br />
-If you have followed along, you have successfully completed the active directory project and I hope that you had as much fun as I did creating this. We went over a ton of material and I know it can get pretty technical very quickly. I cannot stress this enough, if you want to become an amazing blue teamer, you must understand how Mitre Attack works. As this will provide you with some guidance on what an attacker might do, once they compromise in environment. It would mean a lot to me if you shared this project with other aspiring analysts who want to get some hands-on experience. Thank you so much for watching, and I truly hope that this has helped you in any way. Remember to stay curious and do things differently.
+If you have followed along, you have successfully completed the active directory project and I hope that you had as much fun as I did creating this. We went over a ton of material and I know it can get pretty technical very quickly. I cannot stress this enough, if you want to become an amazing blue teamer, you must understand how Mitre Attack works. As this will provide you with some guidance on what an attacker might do, once they compromise in the environment. It would mean a lot to me if you shared this project with other aspiring analysts who want to get some hands-on experience. Thank you so much for watching, and I truly hope that this has helped you in any way. Remember to stay curious and do things differently.
