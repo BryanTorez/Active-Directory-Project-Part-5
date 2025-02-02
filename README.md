@@ -407,36 +407,27 @@ So it says '1:35:33 AM' and you might notice that all of these events are happen
 <br />
 <br />
 <br />
-Then, we'll type in '4624' and it'll say an account was successfully logged on. Head back over to our Splunk, we can expand this event by clicking on "Show all 70 lines" and if we were to scroll down just a bit we do happen to see our workstation name as Kali, as well as its IP address that is trying to log in from.
+Then, we'll type in '4624' and it'll say an account was successfully logged on. Head back over to our Splunk, we can expand this event by clicking on "Show all 70 lines" and if we were to scroll down just a bit we do happen to see our workstation name as Kali, as well as its IP address that is trying to log in from. This does indeed belong to our Kai Linux machine. 
 <br />
 <br />
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://snipboard.io/VrL9IO.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://snipboard.io/VYngIX.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://snipboard.io/UchqXb.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://snipboard.io/r5mi18.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
 <br />
 <br />
-This does indeed belong to our Kai Linux machine. Next, let's install Atomic Red Team on our target machine and then we can run some test on it. To do that, we'll have to open up Powershell with administrator privileges. So we'll search for Powershell and "Run as administrator".
+Next, let's install Atomic Red Team on our target machine and then we can run some tests on it. To do that, we'll have to open up Powershell with administrator privileges. So we'll search for Powershell and "Run as administrator".
 <br />
 <br />
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-<br />
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-<br />
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-<br />
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://snipboard.io/B7E6tm.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
 <br />
@@ -444,16 +435,13 @@ This does indeed belong to our Kai Linux machine. Next, let's install Atomic Red
 We'll log in using the administrator account and then we'll run the following command "Set-ExecutionPolicy Bypass CurrentUser" and then hit "Enter". We want to type in "y" and then hit "Enter". 
 <br />
 <br />
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://snipboard.io/Bk6nOC.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://snipboard.io/pbwTJv.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-<br />
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://snipboard.io/pYalA6.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
 <br />
@@ -461,16 +449,7 @@ We'll log in using the administrator account and then we'll run the following co
 Next, we'll install the Atomic Red Team framework, but before we do that let's set an exclusion for the entire "C:drive". As Microsoft Defender will detect and remove some of the files from Atomic Red Team. So to do that, we'll click on the up arrow and click on "Windows security".
 <br />
 <br />
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-<br />
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-<br />
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-<br />
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://snipboard.io/lpsJzT.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
 <br />
@@ -478,16 +457,16 @@ Next, we'll install the Atomic Red Team framework, but before we do that let's s
 Click on "Virus and threat protection" and click on "Manage settings". Under "Exclusions", we want to click "Add or remove exclusions". Then, click on "Add an exclusion" and select "Folder".
 <br />
 <br />
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://snipboard.io/C7dAtn.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://snipboard.io/Tb3mp8.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://snipboard.io/Y9cEnj.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://snipboard.io/XqU3lL.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
 <br />
@@ -495,16 +474,13 @@ Click on "Virus and threat protection" and click on "Manage settings". Under "Ex
 Select "This PC". Scroll down and select our "C:drive" and then click on "Select Folder". We'll have to log in again as administrator and we should see an exclusion for the C drive. Now, we can start installing Atomic Red Team.
 <br />
 <br />
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://snipboard.io/NVt5xA.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://snipboard.io/VtsT9j.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-<br />
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://snipboard.io/rbSKpy.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
 <br />
@@ -512,16 +488,10 @@ Select "This PC". Scroll down and select our "C:drive" and then click on "Select
 To install Atomic Red Team, you want to run the following command and I'll put this in the description down below. This will go out and grab Atomic Red Team and install it onto your target machine. When you see this, you want to press "Y" and hit "Enter" to install the dependencies
 <br />
 <br />
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://snipboard.io/Cn3Xm6.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-<br />
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-<br />
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://snipboard.io/1rFBHx.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
 <br />
@@ -529,16 +499,13 @@ To install Atomic Red Team, you want to run the following command and I'll put t
 Once Atomic Red Team is completed, head over to the "C:drive" and then click under the directory "AtomicRedTeam". Here we will see what are called "atomics". If we go into that, we see a bunch of technique IDs and these map back to Mitre Attack's framework.
 <br />
 <br />
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://snipboard.io/XtU04n.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://snipboard.io/0edTFr.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-<br />
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://snipboard.io/RQeZKa.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
 <br />
@@ -546,16 +513,16 @@ Once Atomic Red Team is completed, head over to the "C:drive" and then click und
 So if we head over to the Mitre Attack's framework and scroll down to the "Matrix for Enterprise". If we highlight any of them, we notice that there is a technique ID of 'T1190'. So if that is something we wanted to test, we can take a look and see if there's any 'T119'
 <br />
 <br />
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://snipboard.io/UCY8e6.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://snipboard.io/pU3KPD.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://snipboard.io/pU3KPD.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://snipboard.io/x5bVOg.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
 <br />
@@ -563,16 +530,10 @@ So if we head over to the Mitre Attack's framework and scroll down to the "Matri
 There doesn't appear to be any, so that's okay. We can try and test out maybe a "Persistence" tactic. Perhaps, a "Create account". So 'T1136'. We can take a look and see if there are any 'T136' and we do happen to see three of them here.
 <br />
 <br />
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://snipboard.io/4whpR1.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-<br />
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-<br />
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://snipboard.io/PdKxz9.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
 <br />
@@ -580,16 +541,10 @@ There doesn't appear to be any, so that's okay. We can try and test out maybe a 
 So if we go and look at our Mitre Attack framework, we see that one is "local account". Two, is "domain account", and three is "cloud account". Looking at our atomics, we have all three options.
 <br />
 <br />
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://snipboard.io/n4oMaQ.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-<br />
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-<br />
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://snipboard.io/Be15Tb.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
 <br />
@@ -597,16 +552,7 @@ So if we go and look at our Mitre Attack framework, we see that one is "local ac
 In this example, let's go ahead and use the first one. Which is "local account". So I'll go ahead and clear the screen. To use the command, we type in "Invoke-AtomicTest" and then we'll type in the technique ID which was 'T1136.001'. I'll hit "Enter".
 <br />
 <br />
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-<br />
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-<br />
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-<br />
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://snipboard.io/RJUza0.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
 <br />
@@ -614,16 +560,13 @@ In this example, let's go ahead and use the first one. Which is "local account".
 So this will automatically generate telemetry based on creating a local account. I want you to take a look at the username that was created, which is "NewLocalUser". Now that our Command has finished running, we can go and look into Splunk and search specifically for "NewLocalUser".
 <br />
 <br />
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://snipboard.io/yux9bz.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://snipboard.io/qoRCKZ.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-<br />
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://snipboard.io/lsOJfx.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
 <br />
@@ -631,44 +574,26 @@ So this will automatically generate telemetry based on creating a local account.
 We'll type in "index=endpoint NewLocalUser". So we don't get any events, that's kind of odd isn't it but in a way that's actually a good thing cuz this now tells you that you're blind to this activity. If an attacker compromised your system and created a local account with your current settings, you will not be able to detect that activity.
 <br />
 <br />
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-<br />
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-<br />
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-<br />
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://snipboard.io/hcYTrx.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
 <br />
 <br />
-This is why I love Atomic Red Team. It will identify the gaps and visibility for you. It will also generate the telemetry to see if you can actually detect that activity. Let's do another example, we'll go into Mitre Attack and this time, I will select "Command and Scripting Interpreter".
+This is why I love Atomic Red Team. It will identify the gaps and visibility for you. It will also generate the telemetry to see if you can actually detect that activity. Let's do another example, we'll go into Mitre Attack and this time, I will select "Command and Scripting Interpreter". So this one is 'T1059' and we do have a couple of them. 
 <br />
 <br />
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-<br />
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-<br />
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-<br />
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://snipboard.io/cLe9tl.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
 <br />
 <br />
-So this one is 'T1059' and we do have a couple of them. We have one all the way up until seven. So I think that's all of the sub techniques there. We can expand that, and there's Powershell. Which I know for sure we should be able to see, so why don't we do that?
+We have that one all the way up until seven. So I think that's all of the sub techniques there. We can expand that. So if Powershell is here lets search for it.
 <br />
 <br />
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://snipboard.io/2xUm5H.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://snipboard.io/8jDE3s.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
 <img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
