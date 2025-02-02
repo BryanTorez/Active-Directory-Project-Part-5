@@ -206,92 +206,68 @@ We can do this by putting in a greater than sign, like so, "head -n 20 rockyou.t
 <img src="https://snipboard.io/BcpSY1.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://snipboard.io/JnUMbp.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
 <br />
 <br />
-Now, as an attacker, you would probably do a lot of recon. Probably, set up some basic active directory attacks, but let's just say in our scenario we know we want to target a certain password, so that's what I'll do. I'll type in "nano password.txt" to edit it and at the very bottom I'll type in a super secure password. Then, I'll save it out by holding cntrl + x.
+Now, as an attacker, you would probably do a lot of recon. Probably, set up some basic active directory attacks, but let's just say in our scenario we know we want to target a certain password, so that's what I'll do. I'll type in "nano password.txt" to edit it and at the very bottom I'll type in a super secure password. Then, I'll save it out by holding cntrl + x. Type in "y". Then "Enter".
 <br />
 <br />
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://snipboard.io/qY89EX.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://snipboard.io/N5zuKv.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-<br />
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://snipboard.io/C4Kse0.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
 <br />
 <br />
-Type in "y". Then "Enter". Now, if we cat out "password.text" again, we should see our super secure password at the bottom. Now, before we launch the attack, let's head over to our Windows target machine. On our Windows target machine, we want to enable remote desktop and to do that we want to search up for "PC".
+Now, if we cat out "password.text" again, we should see our super secure password at the bottom. Now, before we launch the attack, let's head over to our Windows target machine. On our Windows target machine, we want to enable remote desktop and to do that we want to search up for "PC". So we'll go ahead and type in "PC" and we'll click on "Properties". 
 <br />
 <br />
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://snipboard.io/xJ8h5l.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-<br />
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-<br />
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://snipboard.io/bhjTKN.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
 <br />
 <br />
-So we'll go ahead and type in "PC" and we'll click on "Properties". Once we open that up, we can scroll down and click on "Advanced system settings". We'll log in with the administrator account. Once we have this opened, we want to click on the "Remote" tab.
+Once we open that up, we can scroll down and click on "Advanced system settings". We'll log in with the administrator account. Once we have this opened, we want to click on the "Remote" tab.
 <br />
 <br />
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://snipboard.io/UWgMAD.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://snipboard.io/djkVUG.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-<br />
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://snipboard.io/YUyI4m.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
 <br />
 <br />
-At the bottom, you want to select "Allow remote connections to this computer" and we'll select "Select Users". Click on "Add" and we'll put in our two users. So one is going to be "Jenny Smith" and I'll click on "Check Names". The second is going to be "Terry Smith". So "T.Smith". Finally, check names again.
+At the bottom, you want to select "Allow remote connections to this computer" and we'll select "Select Users". Click on "Add" and we'll put in our two users. So one is going to be "Jenny Smith" and I'll click on "Check Names". The second is going to be "Terry Smith". So "T.Smith". Finally, check names again. Once those are good to go, we can click on "OK".
 <br />
 <br />
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://snipboard.io/ayExZ0.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://snipboard.io/BTP7ru.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://snipboard.io/LPXbcO.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://snipboard.io/B35hIZ.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
 <br />
 <br />
-Once those are good to go, we can click on "OK". Hit "Apply". Click "OK" to close out. So now we have enabled remote desktop onto our target machine. If you want, you can enable remote desktop on your active directory server, but we're going to just skip on that for now and just only focus on our target machine.
-<br />
-<br />
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-<br />
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-<br />
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-<br />
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+So now we have enabled remote desktop onto our target machine. If you want, you can enable remote desktop on your active directory server, but we're going to just skip on that for now and just only focus on our target machine.
 <br />
 <br />
 <br />
@@ -299,33 +275,18 @@ Once those are good to go, we can click on "OK". Hit "Apply". Click "OK" to clos
 Let's head back over to our Kali Linux machine. I'll go ahead and clear the screen. To use our tool, we'll just type in "crowbar -h". This way, we can see the help menu and see what kind of options are available for us.
 <br />
 <br />
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://snipboard.io/Ga9ePC.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-<br />
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-<br />
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://snipboard.io/TFwpUr.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
 <br />
 <br />
-If we scroll to the top, we can see that the description Crowbar is a brute force tool that supports OpenVPN, remote desktop protocol, SSH private keys, and VNC Keys. The service that we're interested in here is remote desktop protocol.
+If we scroll to the top, we can see that the description "Crowbar is a brute force tool that supports OpenVPN, remote desktop protocol, SSH private keys, and VNC Keys." The service that we're interested in here is remote desktop protocol.
 <br />
 <br />
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-<br />
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-<br />
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-<br />
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://snipboard.io/Et93Sz.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
 <br />
@@ -333,33 +294,15 @@ If we scroll to the top, we can see that the description Crowbar is a brute forc
 This is why we're using this tool and why we enabled RDP. The command that I'll use with Crowbar is the following. I'll use "-b" to specify my service and in my case, it is "RDP" which is remote desktop protocol. I'll also type in "-u". Then, I'll specify the account of interest.
 <br />
 <br />
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-<br />
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-<br />
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-<br />
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://snipboard.io/XIVGAd.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
 <br />
 <br />
-For this example, let's just say we are targeting "Terry Smith", so that is "tSmith". Then, I'll type "-C" to specify a password list. We created one earlier and that was called "password.txt". Lastly, I'll type in "-s" to specify my source IP, and the target machine's IP was '192.168.10.100'. 
+For this example, let's just say we are targeting "Terry Smith", so that is "tsmith". Then, I'll type "-C" to specify a password list. We created one earlier and that was called "passwords.txt". Lastly, I'll type in "-s" to specify my source IP, and the target machine's IP was '192.168.10.100'. 
 <br />
 <br />
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-<br />
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-<br />
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-<br />
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://snipboard.io/EAesRS.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
 <br />
@@ -367,33 +310,15 @@ For this example, let's just say we are targeting "Terry Smith", so that is "tSm
 We must specify a CIDR notation. I will use the "/32" CIDR notation, instead of "/24". This is because I only want to target this one IP. Again, this goes back to networking and if you aren't sure what I'm talking about, do take some time to learn more about networking fundamentals.
 <br />
 <br />
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-<br />
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-<br />
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-<br />
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://snipboard.io/g65kyl.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
 <br />
 <br />
-I'll hit "Enter" to run the command. Once we execute Crowbar, it will start trying out all the passwords that are listed under the "passwords.txt" file. Eventually, as we can see, we have an RDP success with the username of "tsmith" and the password right here.
+I'll hit "Enter" to run the command. Once we execute Crowbar, it will start trying out all the passwords that are listed under the "passwords.txt" file. Eventually, as we can see, we have an RDP success with the username of "tsmith" and the password.
 <br />
 <br />
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-<br />
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-<br />
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-<br />
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://snipboard.io/8QoN91.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
 <br />
@@ -401,30 +326,21 @@ I'll hit "Enter" to run the command. Once we execute Crowbar, it will start tryi
 So let's now head over to Splunk and see what telemetry we had generated. Now that we're in Splunk, we'll select "Search and Reporting" and because we did generate the attack, we know that this occurred within the past 15 minutes. We also know that the targeted user was "tsmith".
 <br />
 <br />
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-<br />
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-<br />
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-<br />
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://snipboard.io/TvLP6n.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
 <br />
 <br />
-So let's narrow down our search and only look for events related to "tsmith". So I'll type in "index=endpoint" and then I'll click on the time and I'll select "Last 15 minutes". I'll also add in "tsmith" and hit "Enter". So right away, we have 23 events and if we scroll down just a little bit, we have a field name called "EventCode".
+So let's narrow down our search and only look for events related to "tsmith". So I'll type in "index=endpoint" and then I'll click on the time and I'll select "Last 15 minutes". I'll also add in "tsmith" and hit "Enter".
 <br />
 <br />
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://snipboard.io/NSi7uF.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://snipboard.io/BoslOJ.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://snipboard.io/3lsE9Z.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
 <img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
@@ -432,19 +348,30 @@ So let's narrow down our search and only look for events related to "tsmith". So
 <br />
 <br />
 <br />
-Now, if we click on that. We see a total of 20 counts for the event ID of '4625'. Now, if we were to search what that means. We can type in "event id 4625". We can click "Ultimate Windows Security" and it'll say that an account failed to log on. So this means that there were 20 failed attempts to log into "tsmith's" account.
+So right away, we have 23 events and if we scroll down just a little bit, we have a field name called "EventCode". Now, if we click on that. We see a total of 20 counts for the event ID of '4625'.
 <br />
 <br />
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://snipboard.io/t9MCWq.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://snipboard.io/s2EQx4.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://snipboard.io/h4UNLS.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<br />
+<br />
+Now, if we were to search what that means. We can type in "event id 4625". We can click "Ultimate Windows Security" and it'll say that an account failed to log on. So this means that there were 20 failed attempts to log into "tsmith's" account.
+<br />
+<br />
+<img src="https://snipboard.io/QLa3ti.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<br />
+<br />
+<img src="https://snipboard.io/PpXlHK.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<br />
+<br />
+<img src="https://snipboard.io/X5s8Q0.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
 <br />
@@ -452,16 +379,13 @@ Now, if we click on that. We see a total of 20 counts for the event ID of '4625'
 Which is correct, if you recall our "password.txt" file, there was a total of 21 passwords. One of them being the correct one. Now, if I were to just select '4625', it would automatically update our query and search for it. As you can see with the 20 events here. If we scroll down, I want you to take a look at the time.
 <br />
 <br />
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://snipboard.io/cxzj6C.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://snipboard.io/Mt7z9W.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-<br />
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://snipboard.io/ZAg4HT.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
 <br />
@@ -469,16 +393,16 @@ Which is correct, if you recall our "password.txt" file, there was a total of 21
 So it says '1:35:33 AM' and you might notice that all of these events are happening pretty much at the same time, which can be a clear indication of brute force activity. Now, if we take a look at event code '4624', we have one event and if you're not sure what '4624' is, we can head back over to Ultimate Windows security.
 <br />
 <br />
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://snipboard.io/uczgsG.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://snipboard.io/H8U62T.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://snipboard.io/JRqgQf.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://snipboard.io/7Y6v1K.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
 <br />
