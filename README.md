@@ -1,4 +1,4 @@
-<h1>SOC Automation (Home Lab) - Part 1</h1>
+<h1>SOC Automation (Home Lab) - Part 5</h1>
 
 <p align="center">
 <img src="https://snipboard.io/6rb2ue.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
@@ -6,7 +6,19 @@
 <br />
 <p align="center">
 Welcome to the final part of the series of the active directory project. If you haven't seen the previous parts where we go over how to build out a diagram for this lab, install our virtual machines, configure our tools, and apptive directory, I highly recommend you watch those first to get up to speed.
-  
+<br />
+<br />
+<img src="https://snipboard.io/0OPtHl.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<br />
+<br />
+<img src="https://snipboard.io/4PCsV5.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<br />
+<br />
+<img src="https://snipboard.io/AUObW4.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<br />
+<br />
+<br />
+<br />
 Today's objective is to use Kali Linux to perform a brute-force attack onto our users, giving you a chance to see what this looks like by using Splunk to query for this activity. Afterwards, we will set up and install Atomic Red Team and run a test together. So in the future, you know how to use Atomic Red Team to generate telemetry and detect similar attacks in the future. Also, if you have a machine that does not have at least 16 gigs of RAM. Now, will be a good time to change both the DCs' and target machines ram to 2 gigs, instead of four. Let's get started.
 
 On our Kali Linux machine, the Kali default credentials are "Kali" and "Kali" for the password. We want to set up a static IP address of '192.168.10.250' as per our diagram. To do this, we can right-click the ethernet icon at the top and select "Edit connections".
